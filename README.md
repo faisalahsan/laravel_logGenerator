@@ -1,8 +1,12 @@
 # laravel_logGenerator
 1 - Create new middleware name 'LogGeneratorMiddleware'.
+
 2 - Copy code from 'https://github.com/faisalahsan/laravel_logGenerator/blob/master/LogGeneratorMiddleware.php' and      past into newly created 'LogGeneratorMiddleware' in your project.
+
 3 - Open 'Kernal.php' from your project.
-3 - Register the middleware
+
+4 - Register the middleware
+
     a - In $middleware array, If you want apply this middleware on every request.
       i.e.
       protected $middleware = [
@@ -17,3 +21,5 @@
       ];  
       Then open your route.php and implement on which route, you want to implement.
       Route::get('myLoggerUrl', ['middleware' => 'logger', 'uses' => 'ConfigController@configureCron']);
+    
+
