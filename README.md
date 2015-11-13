@@ -22,4 +22,5 @@
       Then open your route.php and implement on which route, you want to implement.
       Route::get('myLoggerUrl', ['middleware' => 'logger', 'uses' => 'ConfigController@configureCron']);
     
-
+For detail informaiton about status codes : 
+http://kb.globalscape.com/KnowledgebaseArticle10141.aspx
